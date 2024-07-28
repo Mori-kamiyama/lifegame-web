@@ -30,3 +30,7 @@ header {
 #header_list {
     display: flex;
 }
+
+ul {
+    list-style: none;
+}
