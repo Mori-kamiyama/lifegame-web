@@ -1,1 +1,17 @@
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 30px 4% 30px;
 
+
+
+    position: sticky;
+
+}
+
+#page_name {
+    color: rgb(255, 255, 255);
+
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 15px;
+}
