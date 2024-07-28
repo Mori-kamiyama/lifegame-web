@@ -1,0 +1,155 @@
+#shinpi {
+    background: rgb(0, 0, 0);
+    width: 120%;
+    height: 1000px;
+
+    z-index: 10;
+    float: left;
+}
+
+#shinpi_text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 400px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 90px;
+    font-family: serif;
+    letter-spacing: 15px;
+}
+
+#image1 {
+    padding-left: 30px;
+}
+
+#image2 {
+    position: absolute;
+    right: 30px;
+    top: 300px;
+}
+
+#jisso_image {
+    position: relative;
+
+    left: 50%;
+    transform: translate(-60%, 100%);
+    top: -500px;
+
+    width: 1200px;
+
+}
+
+
+#about {
+    background: rgb(255, 255, 255);
+    width: 120%;
+    height: 800px;
+
+    z-index: 10;
+    float: left;
+}
+
+#actibities {
+    background: rgb(255, 255, 255);
+    width: 120%;
+    height: 1000px;
+
+    z-index: 10;
+    float: left;
+}
+
+#jisso {
+    background: rgb(255, 255, 255);
+    width: 120%;
+    height: 1000px;
+
+    z-index: 10;
+    float: left;
+}
+
+#dokuji {
+    background: rgb(255, 255, 255);
+    width: 120%;
+    height: 800px;
+
+    z-index: 10;
+    float: left;
+}
+
+#dokuji_image1 {
+    position: relative;
+
+    left: 45%;
+    transform: translate(-60%, 100%);
+    top: -900px;
+
+    width: 70%;
+}
+
+#dokuji_image2 {
+    position: relative;
+
+    left: 37%;
+    top: -1000px;
+
+    width: 40%;
+    z-index: 200;
+}
+
+.caption {
+    font-size: 90px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+    top: 170px;
+}
+
+.caption_japanese.right {
+    font-size: 90px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: absolute;
+    right: 40px;
+    top: 2700px;
+}
+
+.caption_japanese.left {
+    font-size: 90px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+    top: 170px;
+}
+
+.text {
+    font-size: 30px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+    top: 240px;
+}
+
+#dokuji_text {
+    font-size: 30px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+    top: -500px;
+
+}

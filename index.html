@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./header/header.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -13,23 +15,71 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="page_name">
-            KMC LIFE GAME <br>RESERCHERS</h1>
+    <div id="header"></div>
 
-        <ul id="header_list">
-            <li>
-                <a href="" class="header_link">About</a>
-            </li>
-            <li>
-                <a href="" class="header_link">Projects</a>
-            </li>
-            <li>
-                <a href="" class="header_link">Members</a>
-            </li>
-        </ul>
-    </header>
+    <div id="shinpi">
+        <img src="./img/初の移動物体.gif" alt="gif" class="shinpi_images" id="image1">
+        <img src="./img/回転（σ 1.8）.gif" alt="gif" class="shinpi_images" id="image2">
+        <h1 id="shinpi_text">LIFE GAME</h1>
+    </div>
+
+    <div id="about">
+        <p class="caption">ABOUT</p>
+
+        <p class="text">私たちは、神山まるごと高専のライフゲーム研究部です。<br>
+            ジョン・コンウェイが考案したセル・オートマトンの一種である<br>
+            「ライフゲーム」を研究し、その応用や新しい展開を探求しています。<br>
+            プログラミングとアルゴリズムの力を借りて、生命の神秘や複雑系の<br>美しさを探求することが私たちの目標です。</p>
+
+    </div>
+
+    <div id="actibities">
+        <p class="caption">ACTIBITIES</p>
+
+
+        <p class="text">私たちは、多様なプログラミング言語を駆使してライフゲームを実装し、<br>
+            その進化を美しく視覚化する手法を探求しています。<br>
+
+            同時に、独自のライフゲームルールを考案し、<br>
+            興味深いパターンを生み出す条件の研究に励んでいます。</p>
+
+    </div>
+
+    <div id="jisso">
+        <p class="caption_japanese right">LIFEGAMEの実装</p>
+        <img src="./img/normal_lifegame.gif" alt="gif" class="shinpi_images" id="jisso_image">
+
+        <p class="text">私たちは、多様なプログラミング言語を駆使してライフゲームを実装し、<br>
+            その進化を美しく視覚化する手法を探求しています。<br>
+
+            同時に、独自のライフゲームルールを考案し、<br>
+            興味深いパターンを生み出す条件の研究に励んでいます。</p>
+
+    </div>
+
+    <div id="dokuji">
+        <p class="caption_japanese left">独自のプログラム</p>
+        <img src="./img/dokuji1.png" alt="gif" class="shinpi_images" id="dokuji_image1">
+        <img src="./img/回転（σ 1.8）.gif" alt="gif" class="shinpi_images" id="dokuji_image2">
+
+        <p class="text" id="dokuji_text">通常のLIFEGAMEだけでなく、<br>
+            私たち独自のプログラムを開発。<br>
+            より美しい機械生命を作りあげています。</p>
+
+    </div>
+
+
+
+
 
 </body>
 
 </html>
+
+
+
+<script>
+    fetch("./header/header.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#header").innerHTML = data);
+</script>
