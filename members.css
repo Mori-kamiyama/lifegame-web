@@ -1,0 +1,106 @@
+.caption {
+    font-size: 90px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+}
+
+.text {
+    font-size: 30px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 100px;
+}
+
+.member_photo {
+    position: relative;
+    left: 70px;
+    width: 630px;
+
+}
+
+.member {
+    display: flex;
+    padding: 40px 0px;
+}
+
+.name {
+    display: flex;
+    padding: 0px 0px;
+}
+
+.name_kanji {
+    font-size: 60px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    width: 400px;
+    height: 100px;
+
+    position: relative;
+    left: 180px;
+    top: -20px;
+}
+
+.name_alphabet {
+    font-size: 30px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    width: 400px;
+    height: 100px;
+
+    position: relative;
+    top: 30px;
+    left: 80px;
+}
+
+.belong {
+    font-size: 30px;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    width: 550px;
+    height: 100px;
+
+    position: relative;
+    left: 180px;
+    top: -100px;
+
+    padding: 0px;
+}
+
+.language {
+    font-size: 30px;
+    font-family: serif;
+    letter-spacing: 2px;
+
+    width: 400px;
+    height: 100px;
+
+    position: relative;
+    left: 180px;
+    top: -130px;
+}
+
+.other {
+    font-size: 30px;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    width: 650px;
+    height: 100px;
+
+    position: relative;
+    left: 180px;
+    top: -170px;
+}
