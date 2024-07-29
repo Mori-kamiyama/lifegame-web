@@ -7,18 +7,38 @@
     float: left;
 }
 
+
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #shinpi_text {
     color: rgb(255, 255, 255);
     position: absolute;
     top: 400px;
 
-    left: 50%;
+    left: 30vw;
     transform: translate(-50%, -50%);
 
     font-size: 6em;
     font-family: serif;
     letter-spacing: 15px;
+
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
+
 
 #image1 {
     padding-left: 30px;
