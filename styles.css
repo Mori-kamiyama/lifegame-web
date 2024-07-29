@@ -125,6 +125,26 @@
     position: relative;
     left: 100px;
     top: 170px;
+
+}
+
+.fadein {
+    animation-name: flipLeftTopAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes flipLeftTopAnime {
+    from {
+        transform: translate(-20px, 80px) rotate(-15deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
 }
 
 .caption_japanese.right {

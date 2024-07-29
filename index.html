@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./header/header.css">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -71,7 +72,37 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            fadein();/* アニメーション用の関数を呼ぶ*/
+        });// ここまで画面をスクロールをしたら動く場合の記述
 
+        function fadein() {
+            //動きの指定
+            $('.caption').each(function () { //fadeInTriggerというクラス名が
+                var elemPos = $(this).offset().top - 10;//要素より、50px上の
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll >= elemPos - windowHeight) {
+                    $(this).addClass('fadein');// 画面内に入ったらfadeInというクラス名を追記
+                } else {
+                    $(this).removeClass('fadein');// 画面外に出たらfadeInというクラス名を外す
+                }
+            });
+
+            $('.caption.japanese').each(function () { //fadeInTriggerというクラス名が
+                var elemPos = $(this).offset().top - 10;//要素より、50px上の
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll >= elemPos - windowHeight) {
+                    $(this).addClass('fadein');// 画面内に入ったらfadeInというクラス名を追記
+                } else {
+                    $(this).removeClass('fadein');// 画面外に出たらfadeInというクラス名を外す
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
