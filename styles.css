@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 #shinpi {
     background: rgb(0, 0, 0);
     width: 120%;

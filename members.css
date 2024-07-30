@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .caption {
     font-size: 90px;
     font-family: serif;
@@ -21,7 +25,8 @@
 .member_photo {
     position: relative;
     left: 70px;
-    width: 650px;
+    width: 500px;
+    height: 500px;
 
 }
 
