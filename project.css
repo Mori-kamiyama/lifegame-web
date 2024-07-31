@@ -1,0 +1,63 @@
+body {
+    overflow-x: hidden;
+}
+
+.caption {
+    font-size: 8em;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 14vw;
+}
+
+.text {
+    font-size: 1.5em;
+    font-family: serif;
+    font-family: "Noto Sans", "Noto Sans JP";
+    letter-spacing: 2px;
+
+    position: relative;
+    left: 15vw;
+}
+
+.projects {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw;
+    grid-template-rows: calc(24vw + 3em) calc(24vw + 3em);
+
+    margin: 70px auto;
+}
+
+.grid {
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+
+.box {
+    display:flex;
+    flex-flow: column;
+    margin:0 auto 5%;
+}
+.box img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.title {
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-family: "Noto Sans", "Noto Sans JP";
+}
+
+.name {
+    margin: 0;
+    font-size: 1em;
+    font-family: "Noto Sans", "Noto Sans JP";
+}
+
+
