@@ -7,6 +7,7 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
+    font-weight: bold;
 
     position: relative;
     left: 100px;

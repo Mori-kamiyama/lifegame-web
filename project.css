@@ -3,10 +3,11 @@ body {
 }
 
 .caption {
-    font-size: 8em;
+    font-size: 6em;
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
+    font-weight: bold;
 
     position: relative;
     left: 14vw;
@@ -51,7 +52,7 @@ body {
 .title {
     margin: 5px 0;
     font-size: 1.2em;
-    font-family: "Noto Sans", "Noto Sans JP";
+    font-family: "Noto Sans", "Noto Sans JP";;
 }
 
 .name {
