@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./members.css">
     <link rel="stylesheet" href="./header/header.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
-    <title>Document</title>
 </head>
 
 <body>
-    <div id="header"></div>
-
+<header id="header"></header>
+<main>
     <p class="caption">MEMBERS</p>
-
-    <ul>
+    <ul class="members-list">
         <li class="member">
             <img src="./members_icon/umehara.png" alt="umehara" class="member_photo">
             <div class="texts">
@@ -27,12 +24,10 @@
                     <p class="name_kanji">梅原琉</p>
                     <p class="name_alphabet">Ryu Umehara</p>
                 </div>
-
                 <p class="belong">主幹研究員</p>
                 <p class="language">言語 : Java, Python</p>
                 <p class="other">セル・オートマトンに魅せられた日夜を研究に費やす研究員。研究班初の移動物体の開発を行なった。</p>
             </div>
-
         </li>
         <li class="member">
             <img src="./members_icon/morikawa.png" alt="morikawa" class="member_photo">
@@ -45,8 +40,6 @@
                 <p class="language">言語 : Rust</p>
                 <p class="other">本校のセル・オートマトン研究の発起人。独自のセル・オートマトンのルールを開発し、生命の挙動の再現を試みている。</p>
             </div>
-
-
         </li>
         <li class="member">
             <img src="./members_icon/sato.png" alt="sato" class="member_photo">
@@ -59,36 +52,26 @@
                 <p class="language">言語 : C++</p>
                 <p class="other">主にセル・オートマトン（特にライフゲーム）の調査を担当。研究とページ制作の二足のわらじを履いている。</p>
             </div>
-
         </li>
     </ul>
-
     <p class="text">神山まるごと高専1年 : 3名</p>
+</main>
 
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.nav-menu');
+        const bars = document.querySelectorAll('.menu-icon .bar');
+        menu.classList.toggle('show-menu');
+        bars.forEach(bar => bar.classList.toggle('active'));
+    }
 
-    <!--     <div id="actibities">
-        <p class="caption">ACTIBITIES</p>
-
-
-        <p class="text">私たちは、多様なプログラミング言語を駆使してライフゲームを実装し、<br>
-            その進化を美しく視覚化する手法を探求しています。<br>
-
-            同時に、独自のライフゲームルールを考案し、<br>
-            興味深いパターンを生み出す条件の研究に励んでいます。</p>
-
-    </div> -->
-
-
-
-
+    fetch("./header/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+            document.querySelector("#header").innerHTML = data;
+            document.querySelector('.menu-icon').onclick = toggleMenu;
+        });
+</script>
 </body>
 
 </html>
-
-
-
-<script>
-    fetch("./header/header.html")
-        .then((response) => response.text())
-        .then((data) => document.querySelector("#header").innerHTML = data);
-</script>

@@ -6,7 +6,6 @@ body {
     background: rgb(0, 0, 0);
     width: 120%;
     height: 1000px;
-
     z-index: 10;
     float: left;
 }
@@ -15,15 +14,12 @@ body {
     color: rgb(255, 255, 255);
     position: absolute;
     top: 400px;
-
     right: 0;
     left: 0;
     text-align: center;
-
     font-size: 6em;
     font-family: serif;
     letter-spacing: 15px;
-
     animation-name: fadeUpAnime;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -35,13 +31,11 @@ body {
         opacity: 0;
         transform: translateY(200px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
 
 #image1 {
     padding-left: 30px;
@@ -53,12 +47,10 @@ body {
     top: 300px;
 }
 
-
 #about {
     background: rgb(255, 255, 255);
     width: 120%;
     height: 700px;
-
     z-index: 10;
     float: left;
 }
@@ -71,7 +63,6 @@ body {
     background: rgb(255, 255, 255);
     width: 120%;
     height: 800px;
-
     z-index: 10;
     float: left;
 }
@@ -84,26 +75,21 @@ body {
     background: rgb(255, 255, 255);
     width: 100%;
     height: 1400px;
-
     z-index: 10;
     float: left;
 }
 
 #jisso_image {
     position: relative;
-
     transform: translate(10%, 100%);
     top: -500px;
-
     width: 1200px;
-
 }
 
 #dokuji {
     background: rgb(255, 255, 255);
     width: 100%;
     height: 1450px;
-
     z-index: 10;
     float: left;
 }
@@ -113,29 +99,23 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
-
     position: relative;
     left: 100px;
     top: -500px;
-
 }
 
 #dokuji_image1 {
     position: relative;
-
     left: 50%;
     transform: translate(-60%, 100%);
     top: -750px;
-
     width: 70%;
 }
 
 #dokuji_image2 {
     position: relative;
-
     left: 50%;
     top: -500px;
-
     width: 40%;
     z-index: 200;
 }
@@ -144,17 +124,14 @@ body {
     background: rgb(255, 255, 255);
     width: 100%;
     height: 1250px;
-
     z-index: 10;
     float: left;
 }
 
 .search_image {
     position: relative;
-
     transform: translate(20%, 100%);
     top: -600px;
-
     width: 1000px;
 }
 
@@ -163,11 +140,9 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
-
     position: relative;
     left: 100px;
     top: 70px;
-
 }
 
 .caption {
@@ -176,11 +151,9 @@ body {
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
     font-weight: bold;
-
     position: relative;
     left: 100px;
     top: 170px;
-
 }
 
 .fadein {
@@ -195,7 +168,6 @@ body {
         transform: translate(-20px, 80px) rotate(-15deg);
         opacity: 0;
     }
-
     to {
         transform: translate(0, 0) rotate(0deg);
         opacity: 1;
@@ -207,10 +179,8 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
-
     text-align: right;
     padding-right: 10vw;
-
     margin: 20px 0;
 }
 
@@ -219,10 +189,8 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
-
     text-align: left;
     padding-left: 10vw;
-
     margin: 20px 0;
 }
 
@@ -231,9 +199,119 @@ body {
     font-family: serif;
     font-family: "Noto Sans", "Noto Sans JP";
     letter-spacing: 2px;
-
     position: relative;
     left: 100px;
     top: 240px;
 }
 
+/* スマホ対応スタイル */
+@media (max-width: 640px) {
+    #shinpi {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #shinpi_text {
+        font-size: 3em;
+        letter-spacing: 5px;
+        top: 40vh;
+    }
+
+    #image1 {
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    #image2 {
+        width: 70%;
+        right: 10px;
+        top: 60%;
+    }
+
+    #about {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #actibities {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #jisso {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #jisso_image {
+        width: 80%;
+        top: -20vh;
+    }
+
+    #dokuji {
+        width: 100%;
+        height: 70vh;
+    }
+
+    #dokuji_text {
+        font-size: 1em;
+        left: 20px;
+        top: 10vh;
+    }
+
+    #dokuji_image1 {
+        width: 50%;
+        top: -25vh;
+        left: 40%;
+    }
+
+    #dokuji_image2 {
+        width: 40%;
+        top: 7vh;
+        left: -10%;
+    }
+
+    #search {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .search_image {
+        width: 80%;
+        top: -30vh;
+        left: -2vh;
+    }
+
+    #search_text {
+        font-size: 1em;
+        left: 20px;
+        top: 35px;
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    .caption {
+        font-size: 3em;
+        left: 20px;
+        top: 10vh;
+    }
+
+    .caption_japanese.right {
+        font-size: 2em;
+        padding-right: 10vw;
+        font-weight: bold;
+    }
+
+    .caption_japanese.left {
+        font-size: 2em;
+        padding-left: 10vw;
+        font-weight: bold;
+    }
+
+    .text {
+        font-size: 1em;
+        left: 20px;
+        top: 13vh;
+        width: 85%;
+    }
+}

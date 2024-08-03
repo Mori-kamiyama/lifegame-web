@@ -1,11 +1,35 @@
 <header>
     <h1 id="page_name" href="">
-        KMC LIFE GAME <br>RESERCHERS</h1>
+        KMC LIFE GAME <br>RESERCHERS
+    </h1>
 
-    <div id="header_list">
-        <a href="./index.html" class="header_link" id="link_about">About</a>
-        <a href="./projects.html" class="header_link" id="link_projects">Projects</a>
-        <a href="./members.html" class="header_link" id="link_members">Members</a>
+    <nav class="pc-nav">
+        <div class="header_list">
+            <a href="./index.html" class="header_link" id="link_about">About</a>
+            <a href="./projects.html" class="header_link" id="link_projects">Projects</a>
+            <a href="./members.html" class="header_link" id="link_members">Members</a>
+        </div>
+    </nav>
 
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./members.html">Members</a></li>
+        </ul>
+    </nav>
 </header>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.nav-menu');
+        const bars = document.querySelectorAll('.menu-icon .bar');
+        menu.classList.toggle('show-menu');
+        bars.forEach(bar => bar.classList.toggle('active'));
+    }
+</script>
