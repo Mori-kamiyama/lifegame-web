@@ -171,6 +171,10 @@ body {
         width: 100%;
     }
 
+    .name_kanji {
+        font-size: 3em;
+    }
+
     .name_alphabet {
         font-size: 1em;
     }
